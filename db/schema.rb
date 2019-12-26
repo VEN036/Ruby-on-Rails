@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2017_09_20_041245) do
+ActiveRecord::Schema.define(version: 2019_12_26_115554) do
 
   create_table "answers", force: :cascade do |t|
     t.text "matter"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 2017_09_20_041245) do
     t.integer "question_id"
     t.boolean "correctkey"
     t.index ["question_id"], name: "index_answers_on_question_id"
+  end
+
+  create_table "companyregs", force: :cascade do |t|
+    t.integer "companyid"
+    t.string "companyname"
+    t.integer "testid"
+    t.string "testname"
+    t.string "createdat"
+    t.string "updatedat"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "events", force: :cascade do |t|

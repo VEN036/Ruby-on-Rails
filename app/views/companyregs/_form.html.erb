@@ -1,0 +1,77 @@
+<%= form_with(model: companyreg, local: true) do |form| %>
+  <% if companyreg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(companyreg.errors.count, "error") %> prohibited this companyreg from being saved:</h2>
+
+      <ul>
+        <% companyreg.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :companyid %>
+    <%= form.text_field :companyid %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.number_field : %>
+  </div>
+
+  <div class="field">
+    <%= form.label :companyname %>
+    <%= form.text_field :companyname %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.text_field : %>
+  </div>
+
+  <div class="field">
+    <%= form.label :testid %>
+    <%= form.text_field :testid %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.number_field : %>
+  </div>
+
+  <div class="field">
+    <%= form.label :testname %>
+    <%= form.text_field :testname %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.text_field : %>
+  </div>
+
+  <div class="field">
+    <%= form.label :createdat %>
+    <%= form.text_field :createdat %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.datetime_select : %>
+  </div>
+
+  <div class="field">
+    <%= form.label :updatedat %>
+    <%= form.text_field :updatedat %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.datetime_select : %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

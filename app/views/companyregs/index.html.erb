@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Companyregs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Companyid</th>
+      <th></th>
+      <th>Companyname</th>
+      <th></th>
+      <th>Testid</th>
+      <th></th>
+      <th>Testname</th>
+      <th></th>
+      <th>Createdat</th>
+      <th></th>
+      <th>Updatedat</th>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companyregs.each do |companyreg| %>
+      <tr>
+        <td><%= companyreg.companyid %></td>
+        <td><%= companyreg. %></td>
+        <td><%= companyreg.companyname %></td>
+        <td><%= companyreg. %></td>
+        <td><%= companyreg.testid %></td>
+        <td><%= companyreg. %></td>
+        <td><%= companyreg.testname %></td>
+        <td><%= companyreg. %></td>
+        <td><%= companyreg.createdat %></td>
+        <td><%= companyreg. %></td>
+        <td><%= companyreg.updatedat %></td>
+        <td><%= companyreg. %></td>
+        <td><%= link_to 'Show', companyreg %></td>
+        <td><%= link_to 'Edit', edit_companyreg_path(companyreg) %></td>
+        <td><%= link_to 'Destroy', companyreg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Companyreg', new_companyreg_path %>
