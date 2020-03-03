@@ -232,7 +232,7 @@ GEM
       activerecord (>= 5.0)
     popper_js (1.14.5)
     public_suffix (4.0.1)
-    puma (4.3.1)
+    puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.0.8)
     rack-pjax (1.1.0)
@@ -423,7 +423,7 @@ DEPENDENCIES
   migration_data (~> 0.3.1)
   migration_investigation (~> 0.0.5)
   migration_model (~> 0.1.1)
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.1)
   rails_admin
   redis (~> 4.0)
